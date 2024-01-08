@@ -1,6 +1,6 @@
 from django.urls import path
 
-from test_task.main.views import BookListView
+from .views import BookListView
 
 app_name = 'main'
 

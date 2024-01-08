@@ -1,7 +1,9 @@
 from django.views import generic
 
-from test_task.main.models import Book
+from .models import Book
 
 
 class BookListView(generic.ListView):
     model = Book
+    template_name = 'book_list.html'
+    context_object_name = 'books'
